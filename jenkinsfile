@@ -10,8 +10,8 @@ pipeline {
                 
    echo "var mvnHome=${mvnHome}"
    echo "${mvnHome}    ${mvnHome}\bin"
-   echo '${mvnHome}\bin\mvn -version'
-                sh '${mvnHome}\bin\mvn -version'
+   echo '${mvnHome}\bin\\mvn -version'
+                sh '${mvnHome}\bin\\mvn -version'
                 }
             }
         }
