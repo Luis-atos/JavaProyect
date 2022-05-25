@@ -10,7 +10,7 @@ pipeline {
                 
    echo "var mvnHome=${mvnHome}"
    echo "var env.PATH='${env.PATH}'"
-                sh '${mvnHome}\bin\mvn -version'
+                sh '${mvnHome}\\bin\\mvn -version'
                 }
             }
         }
