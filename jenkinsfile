@@ -9,7 +9,7 @@ pipeline {
                 def mvnHome = tool 'M2'
                 
    echo "var mvnHome=${mvnHome}"
-   echo "var env.PATH='${env.PATH}'"
+   echo "${mvnHome}    ${mvnHome}\\bin\\"
                 sh '${mvnHome}\\bin\\mvn -version'
                 }
             }
