@@ -9,9 +9,9 @@ pipeline {
                 def mvnHome = tool 'M2'
                 
    echo "var mvnHome=${mvnHome}"
-   echo "${mvnHome}    ${mvnHome}\bin"
-   echo '${mvnHome}\bin\\mvn -version'
-                sh '${mvnHome}\bin\\mvn -version'
+   echo "${mvnHome}    ${mvnHome}\\bin"
+   echo '${mvnHome}\\bin\\mvn -version'
+                sh '${mvnHome}\\bin\\mvn -version'
                 }
             }
         }
