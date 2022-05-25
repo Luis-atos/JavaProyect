@@ -4,12 +4,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+            script{
                 echo 'Configurando variables'
-   def mvnHome = tool 'M2'
-   env.PATH = "${mvnHome}/bin:${env.PATH}"
+                def mvnHome = tool 'M2'
+                env.PATH = "${mvnHome}/bin:${env.PATH}"
    echo "var mvnHome=${mvnHome}"
    echo "var env.PATH='${env.PATH}'"
                 sh 'mvn -version'
+                }
             }
         }
         stage('Test') {
