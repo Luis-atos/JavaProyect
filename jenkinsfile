@@ -6,7 +6,8 @@ pipeline {
             steps {
             script{
                 echo 'Configurando variables -->'
-                echo '${pwd()}'
+                def ruta =pwd()
+                echo '--> ruta ${ruta}'
                 }
             }
         }
