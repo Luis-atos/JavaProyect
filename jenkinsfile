@@ -6,8 +6,8 @@ pipeline {
             steps {
             script{
                 echo 'Configurando variables -->'
-                def ruta =${pwd()}
-                echo '--> ruta ${ruta}'
+                def workspace = pwd()
+                echo '--> ruta ${workspace}'
                 }
             }
         }
