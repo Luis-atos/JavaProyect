@@ -8,6 +8,7 @@ pipeline {
                 echo 'Configurando variables -->'
                 def workspace = pwd()
                 echo "--> ruta ${workspace}"
+                sh 'mvn clean'
                 }
             }
         }
