@@ -8,7 +8,7 @@ pipeline {
                 echo 'Configurando variables -->'
                 def workspace = pwd()
                 echo "--> ruta ${workspace}"
-                def output = sh(script: "mvn -f ${workspace}\\pom.xml clean install ", returnStdout: true)
+                def output = bat(script: "mvn -f ${workspace}\\pom.xml clean install ", returnStdout: true)
 			    echo output
 
                 }
