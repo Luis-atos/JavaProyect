@@ -5,10 +5,10 @@ pipeline {
         stage('Build') {
             steps {
             script{
-                echo 'Configurando variables'
+                echo 'Configurando variables env.${M2_HOME}'
                 def mvnHome = tool 'M2'
                 
-   echo 'var mvnHome=${mvnHome}'
+   echo 'var mvnHome=env.${M2_HOME}'
    echo '${mvnHome}    ${mvnHome}\\bin'
    echo '${mvnHome}\\bin\\mvn -version'
                 sh 'mvn -version'
