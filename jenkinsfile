@@ -6,7 +6,7 @@ pipeline {
             steps {
             script{
                 echo 'Configurando variables env.${M2_HOME}'
-                def mvnHome = tool 'M2'
+                
                 
    def mvnHome=env.${M2_HOME}
    echo '${mvnHome}    ${mvnHome}\\bin'
