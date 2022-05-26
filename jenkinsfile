@@ -8,10 +8,10 @@ pipeline {
                 echo 'Configurando variables env.${M2_HOME}'
                 def mvnHome = tool 'M2'
                 
-   echo 'var mvnHome=env.${M2_HOME}'
+   def mvnHome=env.${M2_HOME}
    echo '${mvnHome}    ${mvnHome}\\bin'
    echo '${mvnHome}\\bin\\mvn -version'
-                sh 'mvn -version'
+                sh 'env.${M2_HOME}\\bin\\mvn -version'
                 }
             }
         }
