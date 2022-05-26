@@ -6,7 +6,7 @@ pipeline {
             steps {
             script{
                 echo 'Configurando variables'
-                sh 'mvn -version'
+                sh 'mvn -o clean compile'
                 }
             }
         }
