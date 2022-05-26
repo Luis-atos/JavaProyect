@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             steps {
             script{
-                echo 'Configurando variables'
-                sh 'mvn -o clean compile'
+                echo 'Configurando variables -->'
+                pwd()
                 }
             }
         }
