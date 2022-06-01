@@ -1,0 +1,4 @@
+total 0
+-rw-r--r-- 1 WW930+a864748 4096 0 jun.  1 21:55 fichero.txt
+drwxr-xr-x 1 WW930+a864748 4096 0 may. 25 15:32 main/
+drwxr-xr-x 1 WW930+a864748 4096 0 may. 25 15:32 test/
