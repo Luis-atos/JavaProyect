@@ -5,8 +5,12 @@ pipeline {
         stage('Build') {
             steps {
             script{
-                echo 'Configurando variables'
-                sh 'mvn -version'
+                echo 'Configurando variables -->'
+                def workspace = pwd()
+                echo "--> ruta ${workspace}"
+                def output = bat(script: "mvn -f pom.xml clean ", returnStdout: true)
+			    echo output
+
                 }
             }
         }
